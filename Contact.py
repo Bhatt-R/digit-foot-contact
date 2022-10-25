@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import linear_model
 from sklearn.linear_model import LogisticRegression
 
-col_names=['lf_grf_z','rf_grf_z','lf_spring0','lf_spring1','rf_spring0','rf_spring1','lf_label','rf_label','coeff_lf','coeff_rf','time']
+col_names=['lf_spring0','lf_spring1','rf_spring0','rf_spring1','lf_label','rf_label','time']
 data = pd.read_csv(r"C:\Users\rajar\OneDrive\Desktop\digit_walking_wpos.csv", header=0, usecols=col_names)
 
 feature_cols_lf = ['lf_spring0','lf_spring1','rf_spring0','rf_spring1']
